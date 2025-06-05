@@ -22,70 +22,69 @@
     </header>
     <main>
         <!-- Presentación -->
-        <section id="presentacion" class="presentacion" style="display:flex;align-items:center;gap:32px;justify-content:center;">
-            <img src="imagenes/perfil.jpg" alt="Foto de perfil" class="perfil-img" style="width:110px;height:110px;border-radius:50%;box-shadow:0 4px 24px rgba(0,0,0,0.10);object-fit:cover;">
+        <section id="presentacion" class="presentacion presentacion-animada">
             <div>
-                <h2>¡Hola! Soy Alejo 👋</h2>
-                <p style="max-width:350px;margin:0 auto;">Estudiante de programación apasionado por el desarrollo web y la tecnología. Me encanta crear soluciones simples, limpias y funcionales.</p>
+                <h2 class="titulo-animado">¡Hola! Soy Alejo 👋</h2>
+                <p class="fade-in" style="max-width:350px;margin:0 auto;">Estudiante de programación apasionado por el desarrollo web y la tecnología. Me encanta crear soluciones simples, limpias y funcionales.</p>
             </div>
         </section>
 
         <!-- Sobre mí -->
-        <section id="about">
+        <section id="about" class="fade-in">
             <h2>Sobre mí</h2>
             <p>Soy una persona curiosa, autodidacta y siempre en busca de nuevos retos. Disfruto aprender y compartir conocimientos, y me motiva trabajar en proyectos que aporten valor.</p>
+            <div class="about-icons">
+                <div class="about-icon bounce"><span>💡</span><p>Creativo</p></div>
+                <div class="about-icon bounce-delay"><span>🚀</span><p>Proactivo</p></div>
+                <div class="about-icon bounce-delay2"><span>🤝</span><p>Colaborativo</p></div>
+            </div>
         </section>
 
         <!-- Habilidades -->
-        <section id="skills" class="skills">
+        <section id="skills" class="skills fade-in">
             <h2>Habilidades</h2>
-            <div class="skills-list" style="display:flex;justify-content:center;gap:32px;flex-wrap:wrap;">
-                <div class="skill" style="min-width:120px;">
-                    <img src="./imagenes/Html icono.png" alt="HTML" style="width:48px;height:48px;">
+            <div class="skills-list">
+                <div class="skill skill-animada">
+                    <img src="./imagenes/Html icono.png" alt="HTML" class="icono-skill">
                     <span>HTML</span>
                     <div class="skill-bar"><div class="bar html"></div></div>
                 </div>
-                <div class="skill" style="min-width:120px;">
-                    <img src="./imagenes/css icono.png" alt="CSS" style="width:48px;height:48px;">
+                <div class="skill skill-animada-delay">
+                    <img src="./imagenes/css icono.png" alt="CSS" class="icono-skill">
                     <span>CSS</span>
                     <div class="skill-bar"><div class="bar css"></div></div>
                 </div>
-                <div class="skill" style="min-width:120px;">
-                    <img src="./imagenes/javascript logo.jpeg" alt="JavaScript" style="width:48px;height:48px;">
+                <div class="skill skill-animada-delay2">
+                    <img src="./imagenes/javascript logo.jpeg" alt="JavaScript" class="icono-skill">
                     <span>JavaScript</span>
                     <div class="skill-bar"><div class="bar js"></div></div>
-                </div>
-                <div class="skill" style="min-width:120px;">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" style="width:48px;height:48px;background:#fff;border-radius:6px;">
-                    <span>Python</span>
-                    <div class="skill-bar"><div class="bar python"></div></div>
                 </div>
             </div>
         </section>
 
         <!-- Proyectos -->
-        <section id="proyectos" class="grid-section">
+        <section id="proyectos" class="grid-section fade-in">
             <h2>Mis proyectos</h2>
             <div class="image-grid">
-                <div class="image-container">
+                <div class="image-container animacion-proyecto">
                     <div class="image-overlay">
                         <div class="overlay-text"><a href="https://alkajus95.github.io/clonWIKIPEDIA-de-alejo2/">Wikipedia</a></div>
                     </div>
                     <img src="imagenes/wikipedia.png"  alt = "Captura 1">
                 </div>
-                <div class="image-container">
+                <div class="image-container animacion-proyecto-delay">
                     <div class="image-overlay">
                         <div class="overlay-text"> <a href="https://alkajus95.github.io/obleas-AGC/">Obleas</a></div>
                     </div>
                     <img src="./imagenes/obleas.png" alt="Captura 2">
                 </div>
-                <div class="image-container">
+                <div class="image-container animacion-proyecto-delay2">
                     <div class="image-overlay">
                         <div class="overlay-text"> <a href="https://alkajus95.github.io/prueba-videoframe-alejo-2/">Video frame</a> </div>
                     </div>
                     <img src="./imagenes/videoframe.png" alt="Captura 3">
                 </div>
-                <div class="image-container">
+                <div class="image-container animacion-proyecto-delay3">
                     <div class="image-overlay">
                         <div class="overlay-text"><a href="https://alkajus95.github.io/cortometraje-AGC/">Chatbot</a></div>
                     </div>
@@ -95,17 +94,13 @@
         </section>
 
         <!-- Contacto -->
-        <section id="contacto" class="contacto">
+        <section id="contacto" class="contacto fade-in">
             <h2>Contacto</h2>
             <p>¿Quieres trabajar conmigo o tienes alguna pregunta?</p>
-            <a href="mailto:alejo@email.com" class="contact-btn" style="display:inline-block;margin:12px 0;padding:10px 28px;background:var(--primary);color:#fff;border-radius:6px;text-decoration:none;font-weight:600;transition:background 0.3s;">Envíame un correo</a>
+            <a href="mailto:alejograciacarrillogemail.com" class="contact-btn pulse">Envíame un correo</a>
             <div class="redes" style="margin-top:10px;">
-                <a href="https://github.com/alkajus95" target="_blank" title="GitHub" style="margin:0 8px;">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="width:32px;height:32px;">
-                </a>
-                <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn" style="margin:0 8px;">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" style="width:32px;height:32px;">
-                </a>
+                <a href="https://github.com/alkajus95" target="_blank" title="GitHub" class="icono-red"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn" class="icono-red"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn"></a>
             </div>
         </section>
     </main>

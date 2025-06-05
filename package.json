@@ -1,0 +1,23 @@
+{
+  "name": "portafolio-memoria-agc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alkajus95/final-modulo-1-AGC.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alkajus95/final-modulo-1-AGC/issues"
+  },
+  "homepage": "https://github.com/alkajus95/final-modulo-1-AGC#readme",
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+}
