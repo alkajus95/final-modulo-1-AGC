@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,29 +11,61 @@
         <h1>Portafolio AGC</h1>
         <nav>
             <ul>
-                <li><a href="#hola">Sobre mi</a></li>
-                <li><a href="#grid-section">Proyectos</a></li>
-                <li><a href="#about">Mis lenguajes</a></li>
+                <li><a href="#presentacion">Inicio</a></li>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
                 <button id="dark-mode-toggle" onclick="modoOscuro()" class="boton">Modo Oscuro</button>
             </ul>
         </nav>
     </header>
     <main>
+        <!-- Presentación -->
+        <section id="presentacion" class="presentacion" style="display:flex;align-items:center;gap:32px;justify-content:center;">
+            <img src="imagenes/perfil.jpg" alt="Foto de perfil" class="perfil-img" style="width:110px;height:110px;border-radius:50%;box-shadow:0 4px 24px rgba(0,0,0,0.10);object-fit:cover;">
+            <div>
+                <h2>¡Hola! Soy Alejo 👋</h2>
+                <p style="max-width:350px;margin:0 auto;">Estudiante de programación apasionado por el desarrollo web y la tecnología. Me encanta crear soluciones simples, limpias y funcionales.</p>
+            </div>
+        </section>
+
+        <!-- Sobre mí -->
         <section id="about">
-            <h2>Sobre mi</h2>
-            <p>Hola, soy Alejo y soy estudiante de programación. Me gusta aprender cosas nuevas y mejorar mis habilidades.</p>
-            <p>Me gusta la programación y estoy aprendiendo a crear páginas web. Me gusta trabajar en proyectos interesantes y desafiantes.</p>
-            </section>
-        <section id="sobre-mi">
-            <h2>Mis lenguajes de programación</h2>
+            <h2>Sobre mí</h2>
+            <p>Soy una persona curiosa, autodidacta y siempre en busca de nuevos retos. Disfruto aprender y compartir conocimientos, y me motiva trabajar en proyectos que aporten valor.</p>
         </section>
-        <section id="grid-section1" class="grid-section1">
-            <div class="htmllogo"> <img src="./imagenes/Html icono.png" alt="html" ></div>
-            <div class="csslogo"> <img src="./imagenes/css icono.png" alt="css"></div>
-            <div class="jslogo"><img src="./imagenes/javascript logo.jpeg" alt="js" ></div>
+
+        <!-- Habilidades -->
+        <section id="skills" class="skills">
+            <h2>Habilidades</h2>
+            <div class="skills-list" style="display:flex;justify-content:center;gap:32px;flex-wrap:wrap;">
+                <div class="skill" style="min-width:120px;">
+                    <img src="./imagenes/Html icono.png" alt="HTML" style="width:48px;height:48px;">
+                    <span>HTML</span>
+                    <div class="skill-bar"><div class="bar html"></div></div>
+                </div>
+                <div class="skill" style="min-width:120px;">
+                    <img src="./imagenes/css icono.png" alt="CSS" style="width:48px;height:48px;">
+                    <span>CSS</span>
+                    <div class="skill-bar"><div class="bar css"></div></div>
+                </div>
+                <div class="skill" style="min-width:120px;">
+                    <img src="./imagenes/javascript logo.jpeg" alt="JavaScript" style="width:48px;height:48px;">
+                    <span>JavaScript</span>
+                    <div class="skill-bar"><div class="bar js"></div></div>
+                </div>
+                <div class="skill" style="min-width:120px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" style="width:48px;height:48px;background:#fff;border-radius:6px;">
+                    <span>Python</span>
+                    <div class="skill-bar"><div class="bar python"></div></div>
+                </div>
+            </div>
         </section>
-        <section id="grid-section" class="grid-section">
-            <h2>mis proyectos</h2>
+
+        <!-- Proyectos -->
+        <section id="proyectos" class="grid-section">
+            <h2>Mis proyectos</h2>
             <div class="image-grid">
                 <div class="image-container">
                     <div class="image-overlay">
@@ -49,22 +81,37 @@
                 </div>
                 <div class="image-container">
                     <div class="image-overlay">
-                        <div class="overlay-text"> <a href="https://alkajus95.github.io/prueba-videoframe-alejo-2/">video frame</a> </div>
+                        <div class="overlay-text"> <a href="https://alkajus95.github.io/prueba-videoframe-alejo-2/">Video frame</a> </div>
                     </div>
                     <img src="./imagenes/videoframe.png" alt="Captura 3">
                 </div>
                 <div class="image-container">
                     <div class="image-overlay">
-                        <div class="overlay-text"><a href="https://alkajus95.github.io/cortometraje-AGC/">chatbot</a></div>
+                        <div class="overlay-text"><a href="https://alkajus95.github.io/cortometraje-AGC/">Chatbot</a></div>
                     </div>
-                    <img src="./imagenes/chatbot.png" alt="captura 4">
+                    <img src="./imagenes/chatbot.png" alt="Captura 4">
                 </div>
             </div>
-            
         </section>
-        <footer>
-            <h2> Alejo incorporation </h2>
-        </footer>
-       <script src="main.js"></script>
+
+        <!-- Contacto -->
+        <section id="contacto" class="contacto">
+            <h2>Contacto</h2>
+            <p>¿Quieres trabajar conmigo o tienes alguna pregunta?</p>
+            <a href="mailto:alejo@email.com" class="contact-btn" style="display:inline-block;margin:12px 0;padding:10px 28px;background:var(--primary);color:#fff;border-radius:6px;text-decoration:none;font-weight:600;transition:background 0.3s;">Envíame un correo</a>
+            <div class="redes" style="margin-top:10px;">
+                <a href="https://github.com/alkajus95" target="_blank" title="GitHub" style="margin:0 8px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="width:32px;height:32px;">
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn" style="margin:0 8px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" style="width:32px;height:32px;">
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2> Alejo incorporation </h2>
+    </footer>
+    <script src="main.js"></script>
 </body>
 </html>

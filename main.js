@@ -17,3 +17,12 @@ window.addEventListener("DOMContentLoaded", () => {
         btn.textContent = "Modo Oscuro";
     }
 });
+
+ocument.addEventListener("DOMContentLoaded", () => {
+        setTimeout(() => {
+            document.querySelector('.bar.html').style.width = "90%";
+            document.querySelector('.bar.css').style.width = "80%";
+            document.querySelector('.bar.js').style.width = "70%";
+            document.querySelector('.bar.python').style.width = "60%";
+        }, 400);
+    });

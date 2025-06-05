@@ -328,3 +328,28 @@ body.dark-mode .overlay-text a {
         gap: 18px;
     }
 }
+.skill-bar {
+        background: #eaeaea;
+        border-radius: 6px;
+        height: 8px;
+        width: 100%;
+        margin: 8px 0 0 0;
+        overflow: hidden;
+    }
+    .bar {
+        height: 100%;
+        width: 0;
+        border-radius: 6px;
+        background: linear-gradient(90deg, var(--primary), #8ecae6);
+        transition: width 1.2s cubic-bezier(.4,0,.2,1);
+    }
+    .skill span {
+        display: block;
+        margin-top: 8px;
+        font-weight: 500;
+        color: var(--primary);
+    }
+    .perfil-img {
+        border: 3px solid var(--primary);
+        background: #fff;
+    }
